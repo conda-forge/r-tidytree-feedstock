@@ -15,16 +15,14 @@ source:
   sha256: 96df87d3519c1a35947b423dfe5cb8c4c943a78567b662ad2399b25815afaf2f
 
 build:
-  merge_build_host: True  # [win]
-  number: 0
+  noarch: generic
+  number: 1000
   rpaths:
     - lib/R/lib/
     - lib/
 
 # Suggests: ggtree, knitr, prettydoc, testthat, treeio
 requirements:
-  build:
-    - {{posix}}zip               # [win]
   host:
     - r-base
     - r-ape
