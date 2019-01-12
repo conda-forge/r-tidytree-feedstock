@@ -1,4 +1,4 @@
-{% set version = '0.1.9' %}
+{% set version = '0.2.1' %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -8,13 +8,13 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: tidytree_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/tidytree_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tidytree/tidytree_{{ version }}.tar.gz
-  sha256: 96df87d3519c1a35947b423dfe5cb8c4c943a78567b662ad2399b25815afaf2f
+  sha256: 627193a4cf5c18a9236b102ed38fc051d4d9a5c03fd3575930679e4b374fa6eb
 
 build:
+  merge_build_host: True  # [win]
   noarch: generic
   number: 1000
   rpaths:
@@ -23,12 +23,15 @@ build:
 
 # Suggests: ggtree, knitr, prettydoc, testthat, treeio
 requirements:
+  build:
+
   host:
     - r-base
     - r-ape
     - r-dplyr
     - r-lazyeval
     - r-magrittr
+    - r-rlang
     - r-tibble
   run:
     - r-base
@@ -36,6 +39,7 @@ requirements:
     - r-dplyr
     - r-lazyeval
     - r-magrittr
+    - r-rlang
     - r-tibble
 
 test:
@@ -54,9 +58,4 @@ about:
 
 extra:
   recipe-maintainers:
-    - dpryan79
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
-    - dbast
+    - conda-forge/r
