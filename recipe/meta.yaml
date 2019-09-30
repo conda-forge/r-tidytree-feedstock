@@ -1,4 +1,4 @@
-{% set version = "0.2.5" %}
+{% set version = '0.2.8' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tidytree_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tidytree/tidytree_{{ version }}.tar.gz
-  sha256: 972ba42aab77a7a699184f9ad932322098f3be9dc06291599ab58932c6d8d26d
+  sha256: 7eddded312a5d04c39b958a837560164191750672ac77e7c0be00539116d6dc2
 
 build:
   merge_build_host: True  # [win]
@@ -46,7 +46,7 @@ test:
     - "\"%R%\" -e \"library('tidytree')\""  # [win]
 
 about:
-  home: https://github.com/GuangchuangYu/tidytree
+  home: https://yulab-smu.github.io/treedata-book/
   license: Artistic-2.0
   summary: Phylogenetic tree generally contains multiple components including node, edge, branch
     and associated data. 'tidytree' provides an approach to convert tree object to tidy
@@ -60,7 +60,7 @@ extra:
 
 # Package: tidytree
 # Title: A Tidy Tool for Phylogenetic Tree Data Manipulation
-# Version: 0.2.4
+# Version: 0.2.8
 # Authors@R: c( person("Guangchuang", "Yu",   email = "guangchuangyu@gmail.com", role = c("aut", "cre", "cph"), comment = c(ORCID = "0000-0002-6485-8781")), person("Bradley", "Jones",    email = "brj1@sfu.ca",             role = "ctb"), person("Zebulun", "Arendsee", email = "zbwrnz@gmail.com",        role = "ctb") )
 # Description: Phylogenetic tree generally contains multiple components including node, edge, branch and associated data. 'tidytree' provides an approach to convert tree object to tidy data frame as well as provides tidy interfaces to manipulate tree data.
 # Depends: R (>= 3.4.0)
@@ -69,14 +69,14 @@ extra:
 # VignetteBuilder: knitr
 # ByteCompile: true
 # License: Artistic-2.0
-# URL: https://github.com/GuangchuangYu/tidytree
-# BugReports: https://github.com/GuangchuangYu/tidytree/issues
+# URL: https://yulab-smu.github.io/treedata-book/
+# BugReports: https://github.com/YuLab-SMU/tidytree/issues
 # Encoding: UTF-8
 # LazyData: true
 # RoxygenNote: 6.1.1
 # NeedsCompilation: no
-# Packaged: 2019-02-27 09:57:51 UTC; YGC
+# Packaged: 2019-09-27 03:55:53 UTC; ygc
 # Author: Guangchuang Yu [aut, cre, cph] (<https://orcid.org/0000-0002-6485-8781>), Bradley Jones [ctb], Zebulun Arendsee [ctb]
 # Maintainer: Guangchuang Yu <guangchuangyu@gmail.com>
 # Repository: CRAN
-# Date/Publication: 2019-02-27 10:20:03 UTC
+# Date/Publication: 2019-09-27 07:10:03 UTC
