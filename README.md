@@ -1,7 +1,7 @@
 About r-tidytree
 ================
 
-Home: https://github.com/GuangchuangYu/tidytree
+Home: https://yulab-smu.github.io/treedata-book/
 
 Package license: Artistic-2.0
 
