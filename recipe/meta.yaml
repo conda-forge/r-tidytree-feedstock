@@ -1,4 +1,4 @@
-{% set version = '0.2.8' %}
+{% set version = "0.2.9" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tidytree_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tidytree/tidytree_{{ version }}.tar.gz
-  sha256: 7eddded312a5d04c39b958a837560164191750672ac77e7c0be00539116d6dc2
+  sha256: cfc450aa3fbd2fe291a5bed3faddecf0dd8169cbe4016ac6418fd3dfc29939d1
 
 build:
   merge_build_host: True  # [win]
