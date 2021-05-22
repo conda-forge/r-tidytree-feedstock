@@ -1,4 +1,4 @@
-{% set version = "0.3.3" %}
+{% set version = "0.3.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tidytree_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tidytree/tidytree_{{ version }}.tar.gz
-  sha256: 863e75b5bb3a680368d9e762178daf3caf53cd648f076de824e83870551b6515
+  sha256: 43f582bbfa18f38fc1a507b0dc36e793e8369bb2ea4e74abe8134f7a3f581a2f
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -48,8 +48,7 @@ test:
 about:
   home: https://yulab-smu.github.io/treedata-book/
   license: Artistic-2.0
-  summary: Phylogenetic tree generally contains multiple components including node, edge, branch and associated data. 'tidytree' provides an approach to convert tree
-    object to tidy data frame as well as provides tidy interfaces to manipulate tree data.
+  summary: Phylogenetic tree generally contains multiple components including node, edge, branch and associated data. 'tidytree' provides an approach to convert tree object to tidy data frame as well as provides tidy interfaces to manipulate tree data.
   license_family: OTHER
   license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/Artistic-2.0
 
