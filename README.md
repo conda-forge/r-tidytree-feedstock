@@ -1,11 +1,11 @@
-About r-tidytree
-================
+About r-tidytree-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-tidytree-feedstock/blob/main/LICENSE.txt)
 
 Home: https://yulab-smu.github.io/treedata-book/
 
 Package license: Artistic-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-tidytree-feedstock/blob/main/LICENSE.txt)
 
 Summary: Phylogenetic tree generally contains multiple components including node, edge, branch and associated data. 'tidytree' provides an approach to convert tree object to tidy data frame as well as provides tidy interfaces to manipulate tree data.
 
