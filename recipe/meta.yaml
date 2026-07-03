@@ -1,4 +1,4 @@
-{% set version = "0.4.7" %}
+{% set version = "0.4.8" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tidytree_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tidytree/tidytree_{{ version }}.tar.gz
-  sha256: 4437a98f62903cc3c1c06ce62aa905182c23cd35cbd17931d7e891c4eab0ac80
+  sha256: 2e6a9bea6872d63213f3e10742aa9f9ab737ec5d2162fceac980cd06126bb12c
 
 build:
   number: 0
